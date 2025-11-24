@@ -51,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
         initializeViews();
         setupClickListeners();
 
-        // Check if user is already logged in
         checkAutoLogin();
     }
 
