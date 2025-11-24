@@ -21,7 +21,6 @@ public class MyApplication extends Application {
             if (firebaseApps.isEmpty()) {
                 Log.d(TAG, "Firebase not initialized, initializing manually...");
 
-                // Try automatic initialization first
                 FirebaseApp app = FirebaseApp.initializeApp(this);
 
                 if (app == null) {
@@ -31,9 +30,7 @@ public class MyApplication extends Application {
                     Log.e(TAG, "2. Package name in google-services.json matches: com.example.mathquest");
                     Log.e(TAG, "3. apply plugin: 'com.google.gms.google-services' is at end of app/build.gradle");
 
-                    // Manual initialization as fallback
-                    // REPLACE THESE VALUES WITH YOUR ACTUAL FIREBASE CONFIG
-                    // Get these from your Firebase Console -> Project Settings
+                
                     initializeFirebaseManually();
                 } else {
                     Log.d(TAG, "Firebase initialized successfully via auto-init");
@@ -42,7 +39,6 @@ public class MyApplication extends Application {
                 Log.d(TAG, "Firebase already initialized: " + firebaseApps.size() + " app(s)");
             }
 
-            // Only set persistence if Firebase is initialized
             try {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 database.setPersistenceEnabled(true);
@@ -59,15 +55,14 @@ public class MyApplication extends Application {
 
     private void initializeFirebaseManually() {
         try {
-            // IMPORTANT: Replace these with your actual values from google-services.json
-            // or Firebase Console -> Project Settings -> Your apps -> Config
+            
 
             FirebaseOptions options = new FirebaseOptions.Builder()
-                    .setApplicationId("1:652063062770:android:86dcbb03d54c0730b6ee6b")  // mobilesdk_app_id
-                    .setApiKey("AIzaSyDtAbjF51i6ZARvFuwEbThm0tymxU2eXCk")          // current_key
-                    .setDatabaseUrl("https://mathquest-66637-default-rtdb.firebaseio.com") // firebase_url
-                    .setProjectId("mathquest-66637")                       // project_id
-                    .setStorageBucket("mathquest-66637.firebasestorage.app")         // storage_bucket
+                    .setApplicationId("1:652063062770:android:86dcbb03d54c0730b6ee6b")
+                    .setApiKey("AIzaSyDtAbjF51i6ZARvFuwEbThm0tymxU2eXCk")        
+                    .setDatabaseUrl("https://mathquest-66637-default-rtdb.firebaseio.com")
+                    .setProjectId("mathquest-66637")                       
+                    .setStorageBucket("mathquest-66637.firebasestorage.app")     
                     .build();
 
             FirebaseApp.initializeApp(this, options);
