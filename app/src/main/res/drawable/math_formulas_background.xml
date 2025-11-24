@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base pastel pink gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#FFF8E1"
+                android:centerColor="#FFE1F5"
+                android:endColor="#FFE8F5"
+                android:type="linear" />
+        </shape>
+    </item>
+    
+    <!-- Mathematical formulas and equations as decorative text elements -->
+    <!-- These will be positioned across the background -->
+    
+    <!-- Formula 1: Quadratic formula -->
+    <item android:top="50dp" android:left="20dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFB3D9FF" />
+            <size android:width="120dp" android:height="40dp" />
+        </shape>
+    </item>
+    
+    <!-- Formula 2: Arithmetic progression -->
+    <item android:top="120dp" android:right="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFC8E6C9" />
+            <size android:width="100dp" android:height="35dp" />
+        </shape>
+    </item>
+    
+    <!-- Formula 3: Trigonometry -->
+    <item android:bottom="200dp" android:left="40dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFE0B2" />
+            <size android:width="90dp" android:height="30dp" />
+        </shape>
+    </item>
+    
+    <!-- Formula 4: Calculus/Limits -->
+    <item android:top="250dp" android:left="150dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFE1BEE7" />
+            <size android:width="110dp" android:height="40dp" />
+        </shape>
+    </item>
+    
+    <!-- Geometric shapes -->
+    <!-- Triangle -->
+    <item android:bottom="150dp" android:left="200dp">
+        <rotate android:fromDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="#FFBBDEFB" />
+                <size android:width="60dp" android:height="60dp" />
+            </shape>
+        </rotate>
+    </item>
+    
+    <!-- Circle -->
+    <item android:top="300dp" android:right="100dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFCCBC" />
+            <size android:width="80dp" android:height="80dp" />
+        </shape>
+    </item>
+    
+    <!-- Square -->
+    <item android:top="400dp" android:left="100dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFC5CAE9" />
+            <size android:width="70dp" android:height="70dp" />
+        </shape>
+    </item>
+    
+    <!-- More circles scattered -->
+    <item android:top="180dp" android:right="200dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFB3D9FF" />
+            <size android:width="50dp" android:height="50dp" />
+        </shape>
+    </item>
+    
+    <item android:bottom="300dp" android:right="50dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFC8E6C9" />
+            <size android:width="65dp" android:height="65dp" />
+        </shape>
+    </item>
+    
+    <!-- Hexagon-like shape -->
+    <item android:top="500dp" android:left="250dp">
+        <rotate android:fromDegrees="30">
+            <shape android:shape="rectangle">
+                <solid android:color="#FFE1BEE7" />
+                <size android:width="55dp" android:height="55dp" />
+            </shape>
+        </rotate>
+    </item>
+    
+    <!-- Plus sign shape -->
+    <item android:bottom="400dp" android:left="150dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFE0B2" />
+            <size android:width="45dp" android:height="45dp" />
+        </shape>
+    </item>
+    
+    <!-- Additional decorative elements -->
+    <item android:top="100dp" android:left="300dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFBBDEFB" />
+            <size android:width="40dp" android:height="40dp" />
+        </shape>
+    </item>
+    
+    <item android:bottom="200dp" android:right="150dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFC5CAE9" />
+            <size android:width="50dp" android:height="50dp" />
+        </shape>
+    </item>
+</layer-list>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#FFF5F7"
+                android:centerColor="#F3E5F5"
+                android:endColor="#E8F5E9"
+                android:type="linear" />
+        </shape>
+    </item>
+    
+    <!-- Mathematical shapes - Circles -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFB3D9FF" />
+            <size android:width="120dp" android:height="120dp" />
+        </shape>
+    </item>
+    
+    <!-- Triangle shape (using rotate) -->
+    <item android:top="200dp" android:left="50dp">
+        <rotate android:fromDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="#FFC8E6C9" />
+                <size android:width="80dp" android:height="80dp" />
+            </shape>
+        </rotate>
+    </item>
+    
+    <!-- Square shape -->
+    <item android:top="400dp" android:right="100dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFE0B2" />
+            <size android:width="100dp" android:height="100dp" />
+        </shape>
+    </item>
+    
+    <!-- More circles -->
+    <item android:bottom="150dp" android:left="200dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFE1BEE7" />
+            <size android:width="90dp" android:height="90dp" />
+        </shape>
+    </item>
+    
+    <!-- Hexagon-like shape (using rotate) -->
+    <item android:top="300dp" android:right="50dp">
+        <rotate android:fromDegrees="30">
+            <shape android:shape="rectangle">
+                <solid android:color="#FFBBDEFB" />
+                <size android:width="70dp" android:height="70dp" />
+            </shape>
+        </rotate>
+    </item>
+    
+    <!-- Plus sign shape -->
+    <item android:bottom="300dp" android:right="150dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFCCBC" />
+            <size android:width="60dp" android:height="60dp" />
+        </shape>
+    </item>
+    
+    <!-- Another circle -->
+    <item android:top="100dp" android:right="200dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFC5CAE9" />
+            <size android:width="110dp" android:height="110dp" />
+        </shape>
+    </item>
+</layer-list>
+
